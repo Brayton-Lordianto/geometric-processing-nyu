@@ -1,4 +1,4 @@
-# CSCI-GA.3033-018 - Geometric Modeling
+# Geometric Processing
 
 ### Course Instructor
 *Daniele Panozzo*
