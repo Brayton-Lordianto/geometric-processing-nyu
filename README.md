@@ -10,7 +10,7 @@
 <!-- create a table -->
 | Input | Output |
 | --- | --- |
-| ![Input](assets/cat.png) | ![](https://github.com/user-attachments/assets/9db6b018-8241-4314-99aa-4251050acd10) |
+| ![Input](assets/cat.png) | <video src="https://github.com/user-attachments/assets/9db6b018-8241-4314-99aa-4251050acd10" alt="Output" width="200"/> |
 
 ## Laplacian smoothing and deformation 
 
