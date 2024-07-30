@@ -1,3 +1,4 @@
+
 # Geometric Processing
 
 ### Course Instructor
@@ -9,7 +10,7 @@
 <!-- create a table -->
 | Input | Output |
 | --- | --- |
-| ![Input](assets/cat.png) | ![Output](https://github.com/Brayton-Lordianto/geometric-processing-nyu/blob/8defff5d4b87258d97c9499743111baac91258aa/assets/mesh_reconstruction.mov) |
+| ![Input](assets/cat.png) | ![](https://github.com/user-attachments/assets/9db6b018-8241-4314-99aa-4251050acd10) |
 
 ## Laplacian smoothing and deformation 
 
