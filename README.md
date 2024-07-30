@@ -1,10 +1,6 @@
 
 # Geometric Processing
 
-### Course Instructor
-*Daniele Panozzo*
-
-
 <!-- make title link to implicit reconstruction file -->
 ## [Mesh Implicit Reconstruction](Implicit_Reconstruction_MLS.ipynb)
 
@@ -33,6 +29,10 @@
 <!-- create a table -->
 | Input | Output |
 | --- | --- |
+
+
+### Advisor
+*Daniele Panozzo*
 
 ## Course Description
 *Uses libigl*
