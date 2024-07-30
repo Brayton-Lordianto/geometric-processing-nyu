@@ -23,10 +23,12 @@
 ## Cage-based harmonic coordinates deformation
 
 <!-- create a table -->
-| Input | Cage | Output |
-| --- | --- | --- |
+| Input | Cage | Output | Demo |
+| --- | --- | --- | --- |
+| ![](assets/man.png) | ![](Details_README/images/step2.png) | ![](Details_README/images/step4-1.png) | some video |
 
-## Vector field reconstruction
+<!-- strikethrough -->
+## ~~Vector field reconstruction~~
 
 <!-- create a table -->
 | Input | Output |
