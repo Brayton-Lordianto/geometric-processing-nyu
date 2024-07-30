@@ -18,7 +18,7 @@
 <!-- create a table -->
 | Input --> Smoothing --> Deformation -->  Output | Real-time deformation |
 | --- | --- |
-| ![](assets/first.png) ![](assets/second.png) ![](assets/third.png) | some video | 
+| ![](assets/first.png) ![](assets/second.png) ![](assets/third.png) | <video src="https://github.com/user-attachments/assets/b18023d8-0516-4258-b2a1-dca16a3438bc" alt="Output" width="200"/> | 
 
 ## Cage-based harmonic coordinates deformation
 
