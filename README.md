@@ -25,7 +25,7 @@
 <!-- create a table -->
 | Input | Cage | Output | Demo |
 | --- | --- | --- | --- |
-| ![](assets/man.png) | ![](Details_README/images/step2.png) | ![](Details_README/images/step4-1.png) | some video |
+| ![](assets/man.png) | ![](Details_README/images/step2.png) | ![](Details_README/images/step4-1.png) | <video src="https://github.com/user-attachments/assets/50a8fb32-a362-4079-bb0f-38ba13b548dc" alt="Output" width="200"/> | 
 
 <!-- strikethrough -->
 ## ~~Vector field reconstruction~~
