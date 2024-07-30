@@ -5,18 +5,20 @@
 *Daniele Panozzo*
 
 
-## Mesh Implicit Reconstruction
+<!-- make title link to implicit reconstruction file -->
+## [Mesh Implicit Reconstruction](Implicit_Reconstruction_MLS.ipynb)
 
 <!-- create a table -->
 | Input | Output |
 | --- | --- |
 | ![Input](assets/cat.png) | <video src="https://github.com/user-attachments/assets/9db6b018-8241-4314-99aa-4251050acd10" alt="Output" width="200"/> |
 
-## Laplacian smoothing and deformation 
+## [Laplacian smoothing and deformation](Laplacian_Surface_Editing.ipynb)
 
 <!-- create a table -->
-| Input | Smoothing | Deformation | Output |
-| --- | --- | --- | --- |
+| Input --> Smoothing --> Deformation -->  Output | Real-time deformation |
+| --- | --- |
+| ![](assets/first.png) ![](assets/second.png) ![](assets/third.png) | some video | 
 
 ## Cage-based harmonic coordinates deformation
 
