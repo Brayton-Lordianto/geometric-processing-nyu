@@ -24,24 +24,23 @@
 | ![](assets/man.png) | ![](Details_README/images/step2.png) | ![](Details_README/images/step4-1.png) | <video src="https://github.com/user-attachments/assets/50a8fb32-a362-4079-bb0f-38ba13b548dc" alt="Output" width="200"/> | 
 
 <!-- strikethrough -->
-## ~~Vector field reconstruction~~
+## [Vector field Poisson reconstruction + Mesh Parametization] (Vector_Field_Reconstruction.ipynb)
 
+Red are constraint vectors.
 <!-- create a table -->
-| Input | Output |
-| --- | --- |
+| Input given using soft constraints | Using hard constraints | Calculated Poisson Error | 
+| --- | --- | --- |
+| ![](assets/vf_input.png) | ![](assets/reconstructed_vf.png) | ![](assets/poisson_reconstruction_error.png) |
+
+<!-- poisson_reconstruction_error -->
+<!-- reconstructed_vf -->
+<!-- vf_input -->
 
 
-### Advisor
-*Daniele Panozzo*
-
-## Course Description
-*Uses libigl*
-
-Recent advances in 3D digital geometry processing have created a plenitude of novel concepts for the mathematical representation and interactive manipulation of geometric models. This course covers some of the latest developments in geometric modeling and digital geometry processing. Topics include surface modeling based on polygonal meshes, surface reconstruction, mesh improvement, mesh parametrization, discrete differential geometry, interactive shape editing, skinning animation, architectural and structure-aware geometric modeling, shape modeling, with an eye on 3D printing. The students will learn how to design, program and analyze algorithms and systems for interactive 3D shape modeling and digital geometry processing.
-
-You will learn how to implement advanced geometry processing algorithms using Python and libigl.
-
-By the end of the course, you will be able to design, program, and analyze algorithms and systems for 3D shape modeling and digital geometry processing.
+### Installation of Meshplot 
+`%pip install git+https://github.com/skoch9/meshplot.git`
+`pip install ipywidgets`
+`pip install pythreejs`
 
 ### Topics
 
@@ -53,13 +52,6 @@ By the end of the course, you will be able to design, program, and analyze algor
 * Mesh Parametrization
 * Mesh Deformation and Editing
 * Space Deformations
-* Skeletal Animation and Skinning
 
-### Textbook
-*Polygon Mesh Processing*
-Mario Botsch, Leif Kobbelt, Mark Pauly, Pierre Alliez
-A K Peters/CRC Press
-Textbook - 250 Pages
-ISBN 1568814267
-
-https://github.com/danielepanozzo/gp
+### Acknowledgements
+*Daniele Panozzo*
