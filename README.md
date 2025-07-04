@@ -24,7 +24,7 @@
 | ![](assets/man.png) | ![](Details_README/images/step2.png) | ![](Details_README/images/step4-1.png) | <video src="https://github.com/user-attachments/assets/50a8fb32-a362-4079-bb0f-38ba13b548dc" alt="Output" width="200"/> | 
 
 <!-- strikethrough -->
-## [Vector field Poisson reconstruction + Mesh Parametization] (Vector_Field_Reconstruction.ipynb)
+## [Vector field Poisson reconstruction + Mesh Parametization](Vector_Field_Reconstruction.ipynb)
 
 Red are constraint vectors.
 <!-- create a table -->
