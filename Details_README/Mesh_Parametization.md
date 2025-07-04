@@ -1,8 +1,8 @@
 # Assignment 4: Mesh Parametrization
 
-In this exercise you will
+In this exercise we will
 
- * Familiarize yourself with vector field design on surfaces.
+ * Familiarize ourself with vector field design on surfaces.
  * Create scalar fields whose gradients align with given vector fields as closely as possible.
  * Experiment with the `igl` implementation of harmonic and least-squares conformal parameterizations.
 
@@ -69,7 +69,7 @@ where `cf` are the constrained face indices and `c` are the prescribed vectors a
 \end{align*} -->
 This system's solution describes the smoothly interpolated vector field.
 
-Your task is
+our task is
 
  * Determine how to construct the complex matrix `Q`,
  * Solve the system under the prescribed constraints (which are loaded as described above),
@@ -81,7 +81,7 @@ Your task is
 import scipy.sparse as sp
 u = sp.linalg.spsolve(A, b)
 ```
-but feel free to convert this problem into real variables if you find that easier.
+but feel free to convert this problem into real variables if we find that easier.
 
 *Relevant `igl` functions:* `triangle_triangle_adjacency`, `local_basis` computes a basis for each triangle plane.
 
@@ -99,7 +99,7 @@ Required output for this section:
  * An ASCII dump of the interpolated field (#F x 3 matrix, one vector per row) for the mesh `irr4-cyl2.off` and the input constraints in the provided file `irr4-cyl2.constraints`.
 
 ## 2. Reconstructing a scalar field from a vector field
-Your task is now to find a scalar function `S(x)` defined over the surface whose gradient fits a given vector field as closely as possible.
+our task is now to find a scalar function `S(x)` defined over the surface whose gradient fits a given vector field as closely as possible.
 The scalar field is defined by values on the mesh vertices that are linearly interpolated over each triangle's interior: for given vertex values `si`, the function `S(x)` inside a triangle `t` is computed as
 <br/>
 ![](https://latex.codecogs.com/svg.latex?S_t(x)=\sum\limits_{\textrm{vertex}~i~\in~t}^3s_i\phi_i^t(x))<br/>
@@ -131,15 +131,15 @@ Using the linear relationship `g = Gs`, we can write this least-squares error as
 <!-- $$s^TKs + s^Tb + c$$ -->
 and minimize it by solving a linear system for the unknown `s`.
 
-Your task is
+our task is
 
  * Determine the matrix `K` and vector `b` in the above minimization (by expanding the least-squares error expression).
- * Minimize by differentiating and equating the gradient to zero; this gives you a linear system to solve.
+ * Minimize by differentiating and equating the gradient to zero; this gives we a linear system to solve.
  * Display the scalar function on the surface using a color map and overlay its gradient vectors.
  * Plot the deviation between the input vector field and the solution scalar function's gradient (the "Poisson reconstruction error").
 
 
-*Note:* the linear system is not full rank; `K` has a one dimensional nullspace corresponding to the constant function. This is because a scalar field can be offset by any constant value without altering its gradient. You will need to fix the value at one vertex (e.g., to zero) to solve the system.
+*Note:* the linear system is not full rank; `K` has a one dimensional nullspace corresponding to the constant function. This is because a scalar field can be offset by any constant value without altering its gradient. we will need to fix the value at one vertex (e.g., to zero) to solve the system.
 
 <div align=center><img width=50% height=50% src=img/sf_1.png/><img width=50% height=50% src=img/sf_2.png/></div>
 
@@ -160,14 +160,14 @@ Required output for this section:
 
 ## 3. Harmonic and LSCM Parameterizations
 
-For this task, you will experiment with flattening a mesh with a boundary onto the plane using two parameterization methods: `harmonic` and `Least Squares Conformal` (LSCM) parameterization. In both cases, two scalar fields, `U` and `V`, are computed over the mesh. The per-vertex (`u`, `v`) scalars defining these coordinate functions determine the vertices' flattened positions in the plane (the flattening is linearly interpolated within each triangle).
+For this task, we will experiment with flattening a mesh with a boundary onto the plane using two parameterization methods: `harmonic` and `Least Squares Conformal` (LSCM) parameterization. In both cases, two scalar fields, `U` and `V`, are computed over the mesh. The per-vertex (`u`, `v`) scalars defining these coordinate functions determine the vertices' flattened positions in the plane (the flattening is linearly interpolated within each triangle).
 
-For the harmonic parametrization example, you will first map the mesh boundary to a unit circle in the UV plane centered at the origin. The boundary `U` and `V` coordinates are then "harmonically interpolated" into the interior by solving the Laplace equation with Dirichlet boundary conditions (setting the Laplacian of `U` equal to zero at each interior vertex, then doing the same for `V`). This involves two separate linear system solves (each with the same system matrix).
+For the harmonic parametrization example, we will first map the mesh boundary to a unit circle in the UV plane centered at the origin. The boundary `U` and `V` coordinates are then "harmonically interpolated" into the interior by solving the Laplace equation with Dirichlet boundary conditions (setting the Laplacian of `U` equal to zero at each interior vertex, then doing the same for `V`). This involves two separate linear system solves (each with the same system matrix).
 
 In LSCM, the boundary is free, with the exception of two vertices that must be fixed at two different locations in the UV-plane (to pin down a global position, rotation, and scaling factor). These vertices can be chosen arbitrarily. The process is again a linear system solve, but in this case the `U` and `V` functions are entwined into a single linear system.
 
 
-Your task is
+our task is
 
  * Use the `igl` implementation of harmonic and LSCM mappings to visualize of one of the two mapping functions (`U` or `V`) as a texture over the surface.
  * Compute the gradient of the selected mapping function and overlay it.
@@ -181,7 +181,7 @@ mp.subplot(uv, f, uv=uv, shading={"wireframe": True}, data=p, s=[1, 2, 1])
 ![](img/param.png?raw=true)
 From left to right: a harmonic parameterization, the gradient of its `V` function, a visualization of the flattened mesh on the `UV` plane, LSCM parameterization, and its `UV` domain.
 
-<!-- \emph{Note:} you may need to scale up the parameterization to better visualize the texture lines (parametric curves). -->
+<!-- \emph{Note:} we may need to scale up the parameterization to better visualize the texture lines (parametric curves). -->
 
 *Relevant `igl` functions:* `harmonic_weights`, `lscm`, `boundary_loop`,`map_vertices_to_circle`.
 

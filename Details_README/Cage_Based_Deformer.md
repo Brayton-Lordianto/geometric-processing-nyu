@@ -27,7 +27,7 @@ What I did is allow the user to create a cage around a Gingerbread man mesh, the
 
 Goal: We want to have a set of cage vertices `cage_vertex_i` which enclose the mesh. 
 
-There are many ways to do this, and you are often given them, or the user will choose the vertices themselves. For example, the user chooses their own enclosing (not implemented as this is just GUI work). In this project, I will allow for the mesh to be created by creating an N-gon, then allowing for zooming in and out and rotating the cage, and moving each vertex of the cage to what they want. Something I am not doing is making sure the Gingerman mesh is enclosed by the cage, but this can be done by the user visually.
+There are many ways to do this, and we are often given them, or the user will choose the vertices themselves. For example, the user chooses their own enclosing (not implemented as this is just GUI work). In this project, I will allow for the mesh to be created by creating an N-gon, then allowing for zooming in and out and rotating the cage, and moving each vertex of the cage to what they want. Something I am not doing is making sure the Gingerman mesh is enclosed by the cage, but this can be done by the user visually.
 
 Outputs: 
 
